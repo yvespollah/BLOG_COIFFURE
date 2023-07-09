@@ -4,7 +4,7 @@
     <main class="my-5">
       <div class="container text-center">
         
-        <h4 class="mb-5"><strong>Les posts recents</strong></h4>
+        <h4 class="mb-5"><strong>Rescent Post</strong></h4>
       <!-- first post -->
         <div class="row col-md-7 mx-auto mb-4 ">
         {% for post in object_list %}  
@@ -19,9 +19,7 @@
               <div class="card-body">
                 <h5 class="card-title">{{ post.titre }} </h5>
                 <small>{{ post.date_added }}</small>
-                <p style="text-align:justify;" class="card-text">
-                  {{ post.intro }} 
-                </p>
+                
                 <a href="detail/{{ post.slug }}" class="btn btn-primary">lire plus</a>
               </div>
             </div>

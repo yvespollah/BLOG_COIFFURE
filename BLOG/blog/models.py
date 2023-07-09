@@ -6,7 +6,6 @@ from django.db.models.fields.related import ForeignKey
 class CreateBlog(models.Model):
     titre = models.CharField(max_length=200)
     slug = models.SlugField()
-    intro = models.TextField()
     body = models.TextField()
     image = models.ImageField(upload_to='media')
     date_added = models.DateTimeField(auto_now=True)
